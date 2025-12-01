@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.header {
+  height: 55px;
+  background-color: hsl(0, 89%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.header--logo {
+  width: 24px;
+  aspect-ratio: 1/1;
+}
+
+.header--title {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* .container {
+  height: 100vh;
+  overflow: hidden;
+} */
+.entry {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.entry-image-container {
+  max-width: 200px;
+  /* width: 200px; */
+  aspect-ratio: 1/1;
+}
+
+.entry--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.entry-info--title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.marker-img {
+  height: 20px;
+  aspect-ratio: 1/1;
+}
+
+.entry--country {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.entry--maps-link {
+  font-size: 0.6rem;
+  text-decoration: none;
+  color: hsl(240, 50%, 15%);
+  transition: all 0.3s ease;
+}
+
+.entry--maps-link:hover {
+  text-decoration: underline;
+}
+
+.entry-info--name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.entry-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.entry-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  /* max-width: 60ch; */
+}

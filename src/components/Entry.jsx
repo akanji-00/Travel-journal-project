@@ -11,7 +11,12 @@ export default function Entry(props) {
         <div className="entry-info--title">
           <img className="marker-img" src={marker} alt="Location marker" />
           <span className="entry--country">{props.country}</span>
-          <a href={props.googleMapsLink} className="entry--maps-link">
+          <a
+            href={props.googleMapsLink}
+            className="entry--maps-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             View on Google Maps
           </a>
         </div>

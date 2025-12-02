@@ -3,15 +3,18 @@ import Entry from "./components/Entry.jsx";
 import dataEntries from "./data.js";
 
 function App() {
-  const dataElements = dataEntries.map((data) => {
+  const entryElements = dataEntries.map((data) => {
     return (
       <Entry
-        img={data.img}
-        title={data.title}
-        country={data.country}
-        googleMapsLink={data.googleMapsLink}
-        dates={data.dates}
-        text={data.text}
+        key={data.id}
+        {...data}
+        // ...data just means:
+        // img={data.img}
+        // title={data.title}
+        // country={data.country}
+        // googleMapsLink={data.googleMapsLink}
+        // dates={data.dates}
+        // text={data.text}
       />
     );
   });
@@ -19,7 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="container">{dataElements}</main>
+      <main className="container">{entryElements}</main>
     </>
   );
 }

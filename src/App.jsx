@@ -1,7 +1,12 @@
 import Header from "./components/Header.jsx";
 import Entry from "./components/Entry.jsx";
+import dataEntries from "./data.js";
 
 function App() {
+  const dataElements = dataEntries.map(() => {
+    return <Entry />;
+  });
+
   return (
     <>
       <Header />
